@@ -1,0 +1,22 @@
+{
+  "direction": "ltr",
+  "dashboard": "Dashboard",
+  "weather": "Weather",
+  "profile": "Profile",
+  "todo": "to do",
+  "time":"time",
+  "goodAfternoon":"good afternoon",
+  "goodMorning":"good morning",
+  "edit":"edit",
+  "update":"update",
+  "add":"add",
+  "light":"Light",
+  "dark":"Dark",
+  "english":"English",
+  "farsi":"Farsi",
+  "theme":"Theme",
+  "name":"Name",
+  "language":"Language",
+  "delete":"delete",
+  "logo":"logo"
+}

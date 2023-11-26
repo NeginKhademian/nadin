@@ -1,0 +1,22 @@
+{
+  "direction": "rtl",
+  "dashboard": "داشبورد",
+  "weather": "آب و هوا",
+  "profile": "پروفایل",
+  "todo": "چک لیست",
+  "time": "زمان",
+  "goodAfternoon": "بعد از ظهر بخیر",
+  "goodMorning": "صبح بخیر",
+  "edit": "ویرایش",
+  "update": "به روز رسانی",
+  "add": "افزودن",
+  "light": "روشن",
+  "dark": "تیره",
+  "english": "انگلیسی",
+  "farsi": "فارسی",
+  "theme":"تم",
+  "name":"اسم",
+  "language":"زبان",
+  "delete":"حذف",
+  "logo":"لوگو"
+}
