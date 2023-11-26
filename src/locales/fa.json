@@ -14,9 +14,10 @@
   "dark": "تیره",
   "english": "انگلیسی",
   "farsi": "فارسی",
-  "theme":"تم",
-  "name":"اسم",
-  "language":"زبان",
-  "delete":"حذف",
-  "logo":"لوگو"
+  "theme": "تم",
+  "name": "اسم",
+  "language": "زبان",
+  "delete": "حذف",
+  "logo": "لوگو",
+  "temperature": "دما"
 }

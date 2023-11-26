@@ -6,23 +6,30 @@
         <a-input data-testid="name-input" v-model:value="name" />
       </a-form-item>
       <a-form-item :label="t('theme')">
-        <a-select data-testid="theme-dropdown" v-model:value="theme" :options="themeOptions" >
-          <template  #option="{ value: val, label }">
-            <span :key="val" :aria-label="val">{{ t(label) }}</span>
-          
-          </template>
+        <a-select
+          data-testid="theme-dropdown"
+          v-model:value="theme"
+          :options="themeOptions"
+        >
         </a-select>
       </a-form-item>
 
       <a-form-item :label="t('language')">
-        <a-select data-testid="language-dropdown" v-model:value="selectedLocale" :options="languageOptions">
+        <a-select
+          data-testid="language-dropdown"
+          v-model:value="selectedLocale"
+          :options="languageOptions"
+        >
         </a-select>
       </a-form-item>
 
       <a-form-item>
-        <a-button data-testid="save-button" type="primary" @click="saveProfile">{{
-          `${t("update")}  ${t("profile")}`
-        }}</a-button>
+        <a-button
+          data-testid="save-button"
+          type="primary"
+          @click="saveProfile"
+          >{{ `${t("update")}  ${t("profile")}` }}</a-button
+        >
       </a-form-item>
     </a-form>
   </a-card>
@@ -45,10 +52,11 @@ export default defineComponent({
   },
   setup() {
     const { locale, t } = useI18n();
-    const selectedLocale = ref<string>("fa");
     const store = useStore();
     const name = ref<string>("");
+
     const theme = ref<string>(store.state.appTheme || "light");
+    const selectedLocale = ref<string>("fa");
 
     const saveProfile = () => {
       locale.value = selectedLocale.value;
@@ -57,13 +65,13 @@ export default defineComponent({
     };
 
     const languageOptions = [
-      { value: "en", label: "english" },
-      { value: "fa", label: "farsi" },
+      { value: "en", label: t("english") },
+      { value: "fa", label: t("farsi") },
     ];
 
     const themeOptions = [
-      { value: "light", label: "light" },
-      { value: "dark", label: "dark" },
+      { value: "light", label: t("light") },
+      { value: "dark", label: t("dark") },
     ];
 
     watch(theme, (newVal) => {

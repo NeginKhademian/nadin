@@ -16,8 +16,8 @@
       </div>
       <div v-else-if="weatherData">
         <h2>{{ weatherData.city }}</h2>
-        <p>Temperature: {{ weatherData.temperature }}°C</p>
-        <p>Weather: {{ weatherData.weather }}</p>
+        <p>{{ $t('temperature') }}: {{ $t(`${weatherData.temperature}`) }}°C</p>
+        <p>{{$t('weather') }}: {{  $t(`${weatherData.weather }`)}}</p>
       </div>
     </a-space>
   </a-card>
