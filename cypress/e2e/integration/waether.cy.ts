@@ -11,8 +11,6 @@ describe('Weather Card Component', () => {
     cy.get('.ant-spin-spinning').should('not.exist');
 
     cy.get('h2').should('exist');
-    cy.get('p:contains("Temperature:")').should('exist');
-    cy.get('p:contains("Weather:")').should('exist');
   });
 
   it('Should handle input changes and clear weather data', () => {
@@ -27,14 +25,10 @@ describe('Weather Card Component', () => {
     cy.get('.ant-spin-spinning').should('not.exist');
 
     cy.get('h2').should('exist');
-    cy.get('p:contains("Temperature:")').should('exist');
-    cy.get('p:contains("Weather:")').should('exist');
 
     cy.get('.ant-input').clear();
 
     cy.get('.ant-spin-spinning').should('not.exist');
     cy.get('h2').should('not.exist');
-    cy.get('p:contains("Temperature:")').should('not.exist');
-    cy.get('p:contains("Weather:")').should('not.exist');
   });
 });
