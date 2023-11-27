@@ -61,6 +61,7 @@ export default defineComponent({
     const saveProfile = () => {
       locale.value = selectedLocale.value;
       localStorage.setItem("name", name.value);
+      localStorage.setItem('theme',theme.value)
       store.commit("setAppTheme", theme.value);
     };
 

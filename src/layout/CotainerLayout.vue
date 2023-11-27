@@ -4,19 +4,24 @@
   </a-layout-content>
 </template>
 
-<script>
+<script lang="ts">
 import { useI18n } from "vue-i18n";
-import { ALayoutContent } from "ant-design-vue";
+import { LayoutContent } from "ant-design-vue";
 import useDirection from "../composables/useDirection";
+import { useStore } from "vuex";
+import { onMounted } from "vue";
 
 export default {
   components: {
-    ALayoutContent,
+    "a-layout-content": LayoutContent,
   },
   setup() {
+    const store = useStore();
     const { t } = useI18n();
     const { direction } = useDirection();
-
+    onMounted(() => {
+      store.commit("setAppTheme", localStorage.getItem("theme"));
+    });
     return {
       t,
       direction,
