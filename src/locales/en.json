@@ -19,5 +19,6 @@
   "language": "Language",
   "delete": "delete",
   "logo": "logo",
-  "temperature": "Temperature"
+  "temperature": "Temperature",
+  "temperaturePlaceHolder":"Enter city name"
 }

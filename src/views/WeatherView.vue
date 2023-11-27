@@ -5,7 +5,7 @@
         v-model="selectedCityName"
         :options="filteredCityOptions"
         :option-label-prop="'label'"
-        placeholder="Enter city name"
+        :placeholder="$t('temperaturePlaceHolder')"
         @select="handleSelectOption"
       >
         <a-input :value="selectedCityName" @input="handleInputChange" />

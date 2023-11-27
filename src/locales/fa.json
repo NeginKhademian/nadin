@@ -19,5 +19,7 @@
   "language": "زبان",
   "delete": "حذف",
   "logo": "لوگو",
-  "temperature": "دما"
+  "temperature": "دما",
+  "temperaturePlaceHolder":"نام خود را وارد کنید"
+
 }
