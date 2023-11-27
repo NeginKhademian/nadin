@@ -20,6 +20,6 @@
   "delete": "حذف",
   "logo": "لوگو",
   "temperature": "دما",
-  "temperaturePlaceHolder":"نام خود را وارد کنید"
-
+  "temperaturePlaceHolder":"نام خود را وارد کنید",
+  "namePlaceHolder":"لطفا نام خود را وارد کنید"
 }

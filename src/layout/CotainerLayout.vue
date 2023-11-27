@@ -21,6 +21,10 @@ export default {
     const { direction } = useDirection();
     onMounted(() => {
       store.commit("setAppTheme", localStorage.getItem("theme"));
+      if (!localStorage.getItem("name")) {
+        const name = prompt(t("namePlaceHolder"));
+        localStorage.setItem("name", name);
+      }
     });
     return {
       t,

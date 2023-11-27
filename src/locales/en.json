@@ -20,5 +20,6 @@
   "delete": "delete",
   "logo": "logo",
   "temperature": "Temperature",
-  "temperaturePlaceHolder":"Enter city name"
+  "temperaturePlaceHolder":"Enter city name",
+  "namePlaceHolder":"please add your name"
 }
